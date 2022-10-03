@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block content %}
+<!-- main -->
+<div class="container">
+  <div class="banner">
+    <img src="static/images/banner.png" alt="banner" />
+  </div>
+  <div class="list-container">
+    {% for row in datas %}
+    <div class="vid-list">
+      <div class="preview">
+        <a href="{{url_for('videoplayer',id=row.ID)}}" target="_blank"
+          ><img
+            src="https://img.youtube.com/vi/{{row.url}}/hqdefault.jpg"
+            class="thumbnail"
+            alt=""
+        /></a>
+        <div class="flex-div">
+          <img src="static/images/Jack.png" />
+          <div class="vid-info">
+            <a href="static/videoplayer.html"
+              >This is frent end Youtube UI creation Tutorial</a
+            >
+            <p>1k Views &bull; 5 hours ago</p>
+          </div>
+        </div>
+        <a
+          href="{{url_for('delete_channel',id=row.id)}}"
+          style="width: 100px"
+          class="btn-danger"
+          >Delete</a
+        >
+      </div> 
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>
+{% endblock content %}

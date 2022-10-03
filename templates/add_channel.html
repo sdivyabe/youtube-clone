@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block title %}
+<h1>Add Channel Here</h1>
+{% endblock title %} {% block content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/style.css')}}"
+/>
+<div class="add-video">
+  <form id="myform" action="" method="POST">
+    <input
+      type="text"
+      value=""
+      name="link"
+      id="link"
+      placeholder="Enter video url"
+    /><br />
+    <label for="vidid">Video Id : </label>
+    <input
+      type="text"
+      name="vidid"
+      id="vidid"
+      style="outline: 0; border: 0"
+    /><br />
+    <input
+      type="submit"
+      onclick="{inputUrl.value=videoid.value}"
+      value="Submit "
+    />
+  </form>
+</div>
+<div class="preview">
+  <img src="" alt="Thumbnail" class="thumb" />
+</div>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>
+{% endblock content %}

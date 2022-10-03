@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{%block content %}
+<div class="container">
+    <div class="row">
+        <div class="play-video">
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/{{datas[0]}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="tags">
+                <a href="">#HTML</a>
+                <a href="">#CSS</a>
+                <a href="">#Javascript</a>
+                <a href="">#TypeScript</a>
+                <a href="">#React</a>
+            </div>
+            <h1>This is frent end Youtube UI creation Tutorial</h1>
+            <div class="play-video-info">
+                <p>1k Views &bull; 5 hours ago</p>
+                <div>
+                    <a href=""><img src="../static/images/like.png" alt=""></a>
+                    <a href=""><img src="../static/images/dislike.png" alt=""></a>
+                    <a href=""><img src="../static/images/share.png" alt=""></a>
+                    <a href=""><img src="../static/images/save.png" alt=""></a>
+                </div>
+            </div>
+            <hr>
+            <div class="publisher">
+                <img src="../static/images/Jack.png" alt="">
+                <div>
+                    <p>Happy Students</p>
+                    <span>500k Subscribers</span>
+                </div>
+                <button type="button">Subscribe</button>
+            </div>
+            <div class="vid-description">
+                <p>You can watch and like videos and subscribe to channels with a Google Account. But without a YouTube channel, you have no public presence on YouTube. Even if you have a Google Account, you need to create a YouTube channel to upload videos, comment, or make playlists.</p>
+                <p>YouTube (formerly YouTube Spotlight) is YouTube's official YouTube channel for spotlighting videos and events on the platform. Events shown on the channel include YouTube Comedy Week and the YouTube Music Awards. Additionally, the channel uploaded annual installments of YouTube Rewind between 2010 and 2019. For a brief period in late 2013, the channel was ranked as the most-subscribed on the platform. As of December 2021, the channel has earned 32.6 million subscribers and 2.5 billion video views.</p>
+                <hr>
+                <h4>123 comments</h4>
+                <div class="add-comment">
+                    <img src="../static/images/Jack.png" alt="">
+                    <input type="text " placeholder="Write comments">
+                </div>
+                <div class="old-comment">
+                    <img src="../static/images/Jack.png" alt="">
+                    <div>
+                        <h3>Surendar Manoj<span>2 days ago</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, consectetur.</p>
+                        <div class="comment-action">
+                            <img src="../static/images/like.png" alt="">
+                            <span>24</span>
+                            <img src="../static/images/dislike.png" alt="">
+                            <span></span>
+                            <span>Reply</span>
+                            <a href="">All replies</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="right-sidebar">
+            <div class="side-video-list">
+                    <a href="" class="small-thumbnail">
+                        <img src="../static/images/thumbnail1.png">
+                    </a>                   
+                    <div class="vid-info">
+                        <a href="">This is a Python Tutorial created focusing on Beginners</a>
+                        <p>Happy Students</p>
+                        <p>1m Views &bull; 2 days ago</p>
+                    </div>
+            </div>
+            <div class="side-video-list">
+                <a href="" class="small-thumbnail">
+                    <img src="../static/images/thumbnail2.png">
+                </a>                   
+                <div class="vid-info">
+                    <a href="">This is a Python Tutorial created focusing on Beginners</a>
+                    <p>Happy Students</p>
+                    <p>1m Views &bull; 2 days ago</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="" class="small-thumbnail">
+                    <img src="../static/images/thumbnail3.png">
+                </a>                   
+                <div class="vid-info">
+                    <a href="">This is a Python Tutorial created focusing on Beginners</a>
+                    <p>Happy Students</p>
+                    <p>1m Views &bull; 2 days ago</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="" class="small-thumbnail">
+                    <img src="../static/images/thumbnail4.png">
+                </a>                   
+                <div class="vid-info">
+                    <a href="">This is a Python Tutorial created focusing on Beginners</a>
+                    <p>Happy Students</p>
+                    <p>1m Views &bull; 2 days ago</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="" class="small-thumbnail">
+                    <img src="../static/images/thumbnail5.png">
+                </a>                   
+                <div class="vid-info">
+                    <a href="">This is a Python Tutorial created focusing on Beginners</a>
+                    <p>Happy Students</p>
+                    <p>1m Views &bull; 2 days ago</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="" class="small-thumbnail">
+                    <img src="../static/images/thumbnail6.png">
+                </a>                   
+                <div class="vid-info">
+                    <a href="">This is a Python Tutorial created focusing on Beginners</a>
+                    <p>Happy Students</p>
+                    <p>1m Views &bull; 2 days ago</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="" class="small-thumbnail">
+                    <img src="../static/images/thumbnail7.png">
+                </a>                   
+                <div class="vid-info">
+                    <a href="">This is a Python Tutorial created focusing on Beginners</a>
+                    <p>Happy Students</p>
+                    <p>1m Views &bull; 2 days ago</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="" class="small-thumbnail">
+                    <img src="static/images/thumbnail8.png">
+                </a>                   
+                <div class="vid-info">
+                    <a href="">This is a Python Tutorial created focusing on Beginners</a>
+                    <p>Happy Students</p>
+                    <p>1m Views &bull; 2 days ago</p>
+                </div>
+            </div>
+        </div>  
+    </div>   
+</div>
+{%endblock content %}
