@@ -565,3 +565,9 @@ section h2 {
 .preview.current h4 {
     display: none;
 }
+
+.add-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
