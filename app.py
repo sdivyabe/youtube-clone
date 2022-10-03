@@ -31,6 +31,14 @@ def delete_channel(id):
     conn.commit()
     return redirect(url_for('home'))
 
+@app.route('/subscribe', methods=['GET','POST'])
+def subscribe():
+    # conn=sql.connect('utubeclone.db')
+    # cur=conn.cursor()
+    # # cur.execute(" delete from  videos where ID=?",(id,))
+    # conn.commit()
+    return redirect(url_for('home'))
+
 @app.route("/videoplayer/<string:id>")
 def videoplayer(id):
     conn=sql.connect("utubeclone.db")

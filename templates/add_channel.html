@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block title %}
-<h1>Add Channel Here</h1>
+<h1>Add Video Link Here</h1>
 {% endblock title %} {% block content %}
 <link
   rel="stylesheet"
@@ -14,23 +14,21 @@
       name="link"
       id="link"
       placeholder="Enter video url"
-    /><br />
-    <label for="vidid">Video Id : </label>
+      style="height: 30px; width: 200px"
+    /><br /><br/>
+    <label for="videoid">Video Id : </label>
     <input
       type="text"
-      name="vidid"
-      id="vidid"
+      name="videoid"
+      id="videoid"
       style="outline: 0; border: 0"
-    /><br />
+    /><br /><br/>
     <input
       type="submit"
       onclick="{inputUrl.value=videoid.value}"
       value="Submit "
     />
   </form>
-</div>
-<div class="preview">
-  <img src="" alt="Thumbnail" class="thumb" />
 </div>
 <script src="{{url_for('static', filename='js/script.js')}}"></script>
 {% endblock content %}

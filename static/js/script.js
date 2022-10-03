@@ -44,7 +44,7 @@ menuIcon.onclick = function(){
 
 const inputUrl = document.getElementById("link");
     let thumb = document.querySelector("img");
-    let videoid=document.getElementById("vidid")
+    let videoid=document.getElementById("videoid")
 
     inputUrl.oninput = () => {
       let url = inputUrl.value;
