@@ -7,7 +7,6 @@
   <div class="list-container">
     {% for row in datas %}
     <div class="vid-list">
-      <div class="preview">
         <a href="{{url_for('videoplayer',id=row.ID)}}" target="_blank"
           ><img
             src="https://img.youtube.com/vi/{{row.url}}/hqdefault.jpg"
@@ -29,7 +28,6 @@
           class="btn-danger"
           >Delete</a
         >
-      </div> 
       </div>
       {% endfor %}
     </div>
